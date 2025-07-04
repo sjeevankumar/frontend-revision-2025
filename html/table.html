@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Table</title>
+    <style>
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        text-align: center;
+      }
+      td,
+      th {
+        border: 1px solid black;
+        padding: 10px;
+      }
+      tr:nth-child(odd) {
+        background-color: #d8d0d0;
+      }
+    </style>
+  </head>
+  <body>
+    <table>
+      <colgroup>
+        <col span="2" style="background-color: blueviolet" />
+      </colgroup>
+      <tr>
+        <th>Country</th>
+        <th>Code</th>
+        <th>Email</th>
+      </tr>
+      <tr>
+        <td>India</td>
+        <td>IN</td>
+        <td>india@google.com</td>
+      </tr>
+      <tr>
+        <td>United States of America</td>
+        <td>USA</td>
+        <td>us@google.com</td>
+      </tr>
+      <tr>
+        <td>Japan</td>
+        <td>JP</td>
+        <td>jp@google.com</td>
+      </tr>
+      <tr>
+        <td>China</td>
+        <td>CN</td>
+        <td>cn@google.com</td>
+      </tr>
+    </table>
+    <!-- colspan, rowspan -->
+  </body>
+</html>

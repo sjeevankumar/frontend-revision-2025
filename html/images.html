@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        background-color: #000;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <img
+      src="https://images.unsplash.com/photo-1750262773917-5562f37aaf90?w=1600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDF8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwxfHx8ZW58MHx8fHx8"
+      alt="no image"
+      width="400px"
+    />
+    <img src="./a.avif" alt="no image" width="400px" />
+    <picture>
+      <source srcset="./a.avif" media="(min-width:650px)" />
+      <source srcset="./a.avif" media="(min-width:460px)" />
+      <img src="./a.avif" alt="" />
+    </picture>
+
+    <!-- image map generator -->
+    <img src="a.avif" usemap="#image-map" />
+
+    <map name="image-map">
+      <area
+        onclick="purse()"
+        target=""
+        alt=""
+        title="purse"
+        href=""
+        coords="601,1542,193"
+        shape="circle"
+      />
+      <area
+        onclick="sunscreen()"
+        target=""
+        alt=""
+        title="sunscreen"
+        href=""
+        coords="362,1911,264"
+        shape="circle"
+      />
+    </map>
+    <script>
+      function purse() {
+        alert("you clicked on purse");
+      }
+      function sunscreen() {
+        alert("you clicked on sunscreen");
+      }
+    </script>
+  </body>
+</html>
